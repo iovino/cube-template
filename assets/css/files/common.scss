@@ -1,0 +1,104 @@
+//
+// Main section that's used by about, services, etc..
+//
+.page {
+  color: #a0a0a0;
+  font-size: 16px;
+  line-height: 25px;
+
+  .page-title {
+    background: #3498db;
+    padding: 50px 0;
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+    color: #fff;
+  }
+
+  a.page-anchor:link, a.page-anchor:visited, a.page-anchor:hover {
+    background: #3498db;
+    display: block;
+    width: 50px;
+    color: #fff;
+    padding: 10px 0;
+    margin: 0 auto;
+    text-decoration: none;
+  }
+
+  .page-section-title {
+    background: transparent url("../img/underline_small.png") no-repeat bottom;
+    text-align: center;
+    color: #000;
+    font-size: 14px;
+    padding: 0 0 10px 0;
+    margin: 40px 0;
+  }
+
+  .page-section-excerpt {
+    margin: 0;
+    padding: 0 0 40px 0;
+    text-align: center;
+    line-height: 30px;
+  }
+
+
+}
+
+//
+// Team member skills piecharts
+//
+.piechart {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: 30px auto;
+  width: 100%;
+
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -80px;
+  }
+
+  span {
+    background: #34495e;
+    border-radius: 100%;
+    color: #fff;
+    display: block;
+    font-size: 25px;
+    height: 122px;
+    left: 50%;
+    line-height: 122px;
+    margin-bottom: 50px;
+    margin-left: -61px;
+    position: relative;
+    top: 19px;
+    width: 122px;
+    z-index: 2;
+  }
+
+  span:after {
+    content: '%';
+    font-size: 22px;
+  }
+}
+
+//
+// Parallax backgrounds
+//
+.parallax{
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  width: 100%;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.3);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}

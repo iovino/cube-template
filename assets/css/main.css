@@ -1,0 +1,390 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+html,
+button,
+input,
+select,
+textarea {
+  color: #222; }
+
+html {
+  font-size: 1em;
+  line-height: 1.4; }
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+textarea {
+  resize: vertical; }
+
+img {
+  height: auto;
+  max-width: 100%; }
+
+/*
+ * Image replacement
+ */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px; }
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%; }
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+.invisible {
+  visibility: hidden; }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+  *zoom: 1; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300; }
+
+#header {
+  background: #77c4f7;
+  padding: 20px 0; }
+
+.page {
+  color: #a0a0a0;
+  font-size: 16px;
+  line-height: 25px; }
+  .page .page-title {
+    background: #3498db;
+    padding: 50px 0;
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+    color: #fff; }
+  .page a.page-anchor:link, .page a.page-anchor:visited, .page a.page-anchor:hover {
+    background: #3498db;
+    display: block;
+    width: 50px;
+    color: #fff;
+    padding: 10px 0;
+    margin: 0 auto;
+    text-decoration: none; }
+  .page .page-section-title {
+    background: transparent url("../img/underline_small.png") no-repeat bottom;
+    text-align: center;
+    color: #000;
+    font-size: 14px;
+    padding: 0 0 10px 0;
+    margin: 40px 0; }
+  .page .page-section-excerpt {
+    margin: 0;
+    padding: 0 0 40px 0;
+    text-align: center;
+    line-height: 30px; }
+
+.piechart {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: 30px auto;
+  width: 100%; }
+  .piechart canvas {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -80px; }
+  .piechart span {
+    background: #34495e;
+    border-radius: 100%;
+    color: #fff;
+    display: block;
+    font-size: 25px;
+    height: 122px;
+    left: 50%;
+    line-height: 122px;
+    margin-bottom: 50px;
+    margin-left: -61px;
+    position: relative;
+    top: 19px;
+    width: 122px;
+    z-index: 2; }
+  .piechart span:after {
+    content: '%';
+    font-size: 22px; }
+
+.parallax {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  width: 100%; }
+
+.overlay {
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3; }
+
+#home-page {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  border-bottom: 4px solid #3498db; }
+  #home-page .bg-parallax {
+    background: transparent url("../img/city_bg.png");
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-attachment: fixed !important;
+    background-size: cover !important; }
+  #home-page h2 {
+    color: #fff;
+    font-size: 35pt;
+    font-weight: 100; }
+  #home-page p {
+    color: #fff;
+    font-size: 16pt;
+    font-weight: 100; }
+  #home-page .bx-wrapper .bx-prev {
+    left: 10px; }
+  #home-page .bx-wrapper .bx-next {
+    right: 10px; }
+  #home-page .bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    outline: 0;
+    width: 32px;
+    height: 32px;
+    z-index: 9999;
+    color: #aedafa; }
+  #home-page .bx-wrapper .bx-controls-direction a:hover {
+    color: #fff; }
+
+#responsive {
+  background: #34495e url("../img/slide_responsive_bg.png") no-repeat 50% 0;
+  width: 100%;
+  height: 500px;
+  text-align: center; }
+  #responsive img {
+    position: relative;
+    top: 100px; }
+  #responsive h2 {
+    position: relative;
+    top: 140px;
+    color: #fff;
+    font-weight: 100;
+    line-height: 50px; }
+
+#about-page .about-box {
+  background: #f0f0f0 url("../img/icon_male.png") no-repeat top center;
+  text-align: center;
+  border-bottom: 2px solid #aaaaaa;
+  padding: 0 15px; }
+  #about-page .about-box h3 {
+    padding-top: 165px;
+    color: #3498db;
+    font-weight: 100; }
+  #about-page .about-box p {
+    font-size: 14px; }
+#about-page .team-box {
+  background: #f0f0f0;
+  margin-bottom: 25px; }
+  #about-page .team-box .team-photo {
+    background: #34495e; }
+  #about-page .team-box .team-info {
+    background: #f6f6f6;
+    padding: 25px 0 25px 0; }
+    #about-page .team-box .team-info .team-name {
+      color: #777777;
+      padding: 0;
+      margin: 0 0 5px 0;
+      font-weight: 300; }
+    #about-page .team-box .team-info .team-title {
+      color: #3398da;
+      font-style: italic;
+      font-weight: 300; }
+
+#quote {
+  background: #5b6c7c;
+  color: #fff;
+  font-size: 18pt;
+  font-weight: 300;
+  text-shadow: 0 1px 1px black; }
+  #quote .bg-parallax {
+    background: transparent url("../img/quote_bg.png");
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-attachment: fixed !important;
+    background-size: cover !important; }
+  #quote .quote-content, #quote .quote-name {
+    position: relative;
+    z-index: 3; }
+  #quote .quote-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 70px 0 0 0; }
+  #quote .quote-name {
+    font-size: 10pt;
+    font-weight: 600;
+    padding: 10px 0 60px 0; }
+
+#services-page .quote-icon {
+  color: #dddddd; }
+#services-page .services-quote {
+  text-align: center;
+  color: #777777;
+  max-width: 800px;
+  margin: 0 auto; }
+  #services-page .services-quote .quote-content {
+    font-style: italic;
+    font-size: 20px; }
+  #services-page .services-quote .quote-name {
+    color: #3398d9;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 25px 0 0 0;
+    padding: 0; }
+  #services-page .services-quote .quote-title {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -10px; }
+#services-page .service-box {
+  text-align: center;
+  height: 215px; }
+  #services-page .service-box h4 {
+    background: #ffffff;
+    color: #3498db;
+    font-weight: 100;
+    position: relative;
+    top: 150px;
+    padding: 23px 0; }
+#services-page .service-design {
+  background: #f0f0f0 url("../img/icon_design.png") no-repeat top center; }
+#services-page .service-support {
+  background: #f0f0f0 url("../img/icon_support.png") no-repeat top center; }
+#services-page .service-seo {
+  background: #f0f0f0 url("../img/icon_seo.png") no-repeat top center; }
+#services-page .service-branding {
+  background: #f0f0f0 url("../img/icon_branding.png") no-repeat top center; }
+#services-page .service-hosting {
+  background: #f0f0f0 url("../img/icon_hosting.png") no-repeat top center; }
+#services-page .service-social {
+  background: #f0f0f0 url("../img/icon_social.png") no-repeat top center; }
+#services-page .service-marketing {
+  background: #f0f0f0 url("../img/icon_marketing.png") no-repeat top center; }
+#services-page .service-store {
+  background: #f0f0f0 url("../img/icon_store.png") no-repeat top center; }
+
+.service-details {
+  background: #3498db;
+  color: #fff;
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: table;
+  z-index: 10;
+  opacity: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+
+.service-box:hover + .service-box .service-details, .service-box:hover .service-details {
+  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); }

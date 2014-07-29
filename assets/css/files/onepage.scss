@@ -1,0 +1,278 @@
+//
+// Home section is the first section the user sees once page is loaded
+//
+#home-page {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  border-bottom: 4px solid #3498db;
+
+  .bg-parallax{
+    background: transparent url("../img/city_bg.png");
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+  }
+
+  h2 {
+    color: #fff;
+    font-size: 35pt;
+    font-weight: 100;
+  }
+
+  p {
+    color: #fff;
+    font-size: 16pt;
+    font-weight: 100;
+  }
+
+  // slider controls
+  .bx-wrapper {
+    .bx-prev {left: 10px;}
+    .bx-next {right: 10px;}
+
+    .bx-controls-direction a {
+      position: absolute;
+      top: 50%;
+      margin-top: -16px;
+      outline: 0;
+      width: 32px;
+      height: 32px;
+      z-index: 9999;
+      color: #aedafa;
+    }
+
+    .bx-controls-direction a:hover {
+      color: #fff;
+    }
+  }
+}
+
+//
+// Responsive section directly under the home-page section
+//
+#responsive {
+  background: #34495e url("../img/slide_responsive_bg.png") no-repeat 50% 0;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+
+  img {
+    position: relative;
+    top: 100px;
+  }
+
+  h2 {
+    position: relative;
+    top: 140px;
+    color: #fff;
+    font-weight: 100;
+    line-height: 50px;
+  }
+}
+
+//
+// About us section
+//
+#about-page {
+
+  .about-box {
+    background: #f0f0f0 url("../img/icon_male.png") no-repeat top center;
+    text-align: center;
+    border-bottom: 2px solid #aaaaaa;
+    padding: 0 15px;
+
+    h3 {
+      padding-top: 165px;
+      color: #3498db;
+      font-weight: 100;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .team-box {
+    background: #f0f0f0;
+    margin-bottom: 25px;
+
+    .team-photo {
+      background: #34495e;
+    }
+
+    .team-info {
+      background: #f6f6f6;
+      padding: 25px 0 25px 0;
+
+      .team-name {
+        color: #777777;
+        padding: 0;
+        margin: 0 0 5px 0;
+        font-weight: 300;
+      }
+
+      .team-title {
+        color: #3398da;
+        font-style: italic;
+        font-weight: 300;
+      }
+
+    }
+  }
+}
+
+//
+// Quote under the About section
+//
+#quote {
+  background: #5b6c7c;
+  color: #fff;
+  font-size: 18pt;
+  font-weight: 300;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
+
+  .bg-parallax{
+    background: transparent url("../img/quote_bg.png");
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+  }
+
+  .quote-content, .quote-name {
+    position: relative;
+    z-index: 3;
+  }
+
+  .quote-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 70px 0 0 0;
+  }
+
+  .quote-name {
+    font-size: 10pt;
+    font-weight: 600;
+    padding: 10px 0 60px 0;
+  }
+
+}
+
+//
+// Services page
+//
+#services-page {
+
+  .quote-icon {
+    color: #dddddd;
+  }
+
+  .services-quote {
+    text-align: center;
+    color: #777777;
+    max-width: 800px;
+    margin: 0 auto;
+
+    .quote-content {
+      font-style: italic;
+      font-size: 20px;
+    }
+
+    .quote-name {
+      color: #3398d9;
+      font-weight: bold;
+      font-size: 12px;
+      margin: 25px 0 0 0;
+      padding: 0;
+
+    }
+
+    .quote-title {
+      font-size: 12px;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      top: -10px;
+    }
+  }
+
+  .service-box {
+    text-align: center;
+    height: 215px;
+
+    h4 {
+      background: #ffffff;
+      color: #3498db;
+      font-weight: 100;
+      position: relative;
+      top: 150px;
+      padding: 23px 0;
+    }
+  }
+
+  .service-design {
+    background: #f0f0f0 url("../img/icon_design.png") no-repeat top center;
+  }
+
+  .service-support {
+    background: #f0f0f0 url("../img/icon_support.png") no-repeat top center;
+  }
+
+  .service-seo {
+    background: #f0f0f0 url("../img/icon_seo.png") no-repeat top center;
+  }
+
+  .service-branding {
+    background: #f0f0f0 url("../img/icon_branding.png") no-repeat top center;
+  }
+
+  .service-hosting {
+    background: #f0f0f0 url("../img/icon_hosting.png") no-repeat top center;
+  }
+
+  .service-social {
+    background: #f0f0f0 url("../img/icon_social.png") no-repeat top center;
+  }
+
+  .service-marketing {
+    background: #f0f0f0 url("../img/icon_marketing.png") no-repeat top center;
+  }
+
+  .service-store {
+    background: #f0f0f0 url("../img/icon_store.png") no-repeat top center;
+  }
+
+}
+
+.service-details {
+  background: #3498db;
+  color: #fff;
+  padding: 15px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: table;
+  z-index: 10;
+  opacity: 0;
+
+  filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.service-box:hover + .service-box .service-details, .service-box:hover .service-details {
+  opacity: 1;
+  filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+
+}
